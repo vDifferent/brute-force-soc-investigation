@@ -6,7 +6,7 @@ logsource:
 detection:
   failed:
     message|contains: 'Failed password'  # the tell-tale text
-  timeframe: 60s  # how long to count over
+  timeframe: 15min  # how long to count over
   condition: failed | count() > 5 by src_ip
 level: high
 tags:
