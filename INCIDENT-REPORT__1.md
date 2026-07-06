@@ -23,8 +23,8 @@ compromised. Recommend immediate password reset and a block on the source IP.
 Wazuh rule 5712 (Multiple authentication failures) fired after [n] failed
 logins from a single source IP within [duration] seconds. Reviewing the
 events that followed showed a successful login (rule 5715) from that same
-IP moments later. The burst-then-breakthrough pattern — repeated failures
-followed immediately by a success from the identical source — is the
+IP moments later. The burst-then-breakthrough pattern, repeated failures
+followed immediately by a success from the identical source, is the
 signature of a brute force attack that succeeded, not a legitimate user
 mistyping their password. This distinguishes a routine failed-login alert
 from a confirmed account compromise.
@@ -37,7 +37,7 @@ from a confirmed account compromise.
 The attacker gained valid credentials for the `analyst` account on
 `ubuntu-target`, providing legitimate-looking access to the host. Depending
 on the account's privileges, this could allow lateral movement, data access,
-or further privilege escalation — and because it uses a valid account rather
+or further privilege escalation, and because it uses a valid account rather
 than exploiting a vulnerability, this access is harder to distinguish from
 normal activity.
 
