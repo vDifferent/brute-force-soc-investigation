@@ -14,7 +14,7 @@ Three isolated VMs on a private NAT network:
 | Target | Ubuntu Server | Victim host, SSH exposed, Wazuh agent installed |
 | SOC / SIEM | Wazuh | Collects logs, raises alerts, investigation console |
 
-![architecture](Screenshots/ARCHITECTURE.png)
+![ARCHITECTURE](Screenshots/ARCHITECTURE.png)
 
 ## What I Learned
 
@@ -34,18 +34,18 @@ doesn't happen again.
 
 ## Key screenshots
 
-![failed logins](screenshots/FAILED-LOGINS.png)
+![FAILED-LOGINS](Screenshots/FAILED-LOGINS.png)
 *Cluster of failed SSH authentication attempts from a single source IP*
 
-![success alert](screenshots/SUCCESS-ALERT.png)
+![SUCCESS-ALERT](Screenshots/SUCCESS-ALERT.png)
 *Successful login from the same source IP immediately following the failures*
 
-![mitre panel](screenshots/MITRE-PANEL.png)
+![MITRE-PANEL](Screenshots/MITRE-PANEL.png)
 *Wazuh's MITRE ATT&CK mapping for the alert*
 
 ## Detection rule
 
-A portable Sigma rule describing the pattern, in [`detection/SIGMA_1.yml`](detection/SIGMA_1.yml).
+A portable Sigma rule describing the pattern, in [`Detection/SIGMA_1.yml`](Detection/SIGMA_1.yml).
 
 ## Full write-up
 
