@@ -43,7 +43,7 @@ A portable Sigma rule describing the pattern, in [`detection/sigma.yml`](detecti
 
 ## Full write-up
 
-See [incident-report.md](incident-report.md) for the complete investigation,
+See [incident-report_1.md](incident-report_1.md) for the complete investigation,
 including the five-question analysis (who, what, where, when, did it work),
 MITRE mapping, and remediation recommendations.
 
