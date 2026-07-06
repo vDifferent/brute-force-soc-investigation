@@ -14,9 +14,9 @@ Three isolated VMs on a private NAT network:
 | Target | Ubuntu Server | Victim host, SSH exposed, Wazuh agent installed |
 | SOC / SIEM | Wazuh | Collects logs, raises alerts, investigation console |
 
-![architecture](screenshots/ARCHITECTURE.png)
+![architecture](Screenshots/ARCHITECTURE.png)
 
-## Lessons learned
+## What I Learned
 
 The value isn't in running the attack tool — it's being able to say, with
 evidence, whether the attacker actually got in, and what should change so it
