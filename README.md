@@ -14,7 +14,13 @@ Three isolated VMs on a private NAT network:
 | Target | Ubuntu Server | Victim host, SSH exposed, Wazuh agent installed |
 | SOC / SIEM | Wazuh | Collects logs, raises alerts, investigation console |
 
-![architecture](screenshots/architecture.png)
+![architecture](screenshots/ARCHITECTURE.png)
+
+## Lessons learned
+
+The value isn't in running the attack tool — it's being able to say, with
+evidence, whether the attacker actually got in, and what should change so it
+doesn't happen again.
 
 ## What I did
 
@@ -28,31 +34,25 @@ Three isolated VMs on a private NAT network:
 
 ## Key screenshots
 
-![failed logins](screenshots/failed-logins.png)
+![failed logins](screenshots/FAILED-LOGINS.png)
 *Cluster of failed SSH authentication attempts from a single source IP*
 
-![success alert](screenshots/success-alert.png)
+![success alert](screenshots/SUCCESS-ALERT.png)
 *Successful login from the same source IP immediately following the failures*
 
-![mitre panel](screenshots/mitre-panel.png)
+![mitre panel](screenshots/MITRE-PANEL.png)
 *Wazuh's MITRE ATT&CK mapping for the alert*
 
 ## Detection rule
 
-A portable Sigma rule describing the pattern, in [`detection/sigma_1.yml`](detection/sigma_1.yml).
+A portable Sigma rule describing the pattern, in [`detection/SIGMA_1.yml`](detection/SIGMA_1.yml).
 
 ## Full write-up
 
-See [incident-report_1.md](incident-report_1.md) for the complete investigation,
+See [INCIDENT-REPORT_1.md](INCIDENT-REPORT_1.md) for the complete investigation,
 including the five-question analysis (who, what, where, when, did it work),
 MITRE mapping, and remediation recommendations.
 
 ## Tools used
 
 `VirtualBox` · `Ubuntu Server` · `Kali Linux` · `Wazuh` · `Hydra` · `Sigma` · `MITRE ATT&CK`
-
-## Lessons learned
-
-The value isn't in running the attack tool — it's being able to say, with
-evidence, whether the attacker actually got in, and what should change so it
-doesn't happen again.
