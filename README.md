@@ -39,7 +39,7 @@ Three isolated VMs on a private NAT network:
 
 ## Detection rule
 
-A portable Sigma rule describing the pattern, in [`sigma.yml`](sigma.yml).
+A portable Sigma rule describing the pattern, in [`sigma_1.yml`](sigma_1.yml).
 
 ## Full write-up
 
